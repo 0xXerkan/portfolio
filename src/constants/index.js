@@ -23,6 +23,19 @@ import {
   jobit,
   tripguide,
   threejs,
+  bootstrap,
+  cpp,
+  ethersjs,
+  expressjs,
+  firebase,
+  framer,
+  nextjs,
+  postgres,
+  python,
+  solidity,
+  smartbrain,
+  nextgen,
+  gpt,
 } from "../assets";
 
 export const navLinks = [
@@ -31,8 +44,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -42,19 +55,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front End Developer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "JavaScript Developer",
+    icon: mobile,
+  },
+  
+  {
+    title: "Python Developer",
     icon: creator,
   },
 ];
@@ -73,8 +87,16 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Solidity",
+    icon: solidity,
+  },
+  {
+    name: "C++",
+    icon: cpp,
   },
   {
     name: "React JS",
@@ -85,21 +107,49 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
+    name: "Express JS",
+    icon: expressjs,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgres,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "Framer Motion",
+    icon: framer,
   },
   {
     name: "Three JS",
     icon: threejs,
   },
+  {
+    name: "Ethers JS",
+    icon: ethersjs,
+  }, 
   {
     name: "git",
     icon: git,
@@ -198,67 +248,70 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: '"SmartBrain" Face Detection App',
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "SmartBrain is a web application that takes a user submitted image URL and analyzes and detects if the image contains any faces and displays boxes around any detected faces. The application also manages user login credentials and statistics in a back end database.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "postgresql",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "expressjs",
+        color: "orange-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: smartbrain,
+    source_code_link: "https://github.com/0xXerkan/smartbrain",
+    live_demo_link: "https://0xxerkan.github.io/smartbrain/"
   },
   {
-    name: "Job IT",
+    name: "NextGen Audio",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A full e-commerce platform for an audio company complete with dynamically rendered product detail pages, full functioning shopping cart, and seamlessly integrated with Stripe payment processsing.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "react_context",
         color: "green-text-gradient",
+      },      
+      {
+        name: "sanity_io",
+        color: "green-text-gradient",
+      },
+    ],
+    image: nextgen,
+    source_code_link: "https://github.com/0xXerkan/next-ecommerce",
+    live_demo_link: "https://next-ecommerce-0xxerkan.vercel.app/"
+  },
+  {
+    name: "Figma Design Development",
+    description:
+      "A fully responsive landing page developed from a Figma design file. This project demonstrates the development of a website after the designer to developer handoff process, and all assets and styles were imported from the design file",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "figma",
+        color: "pink-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: gpt,
+    source_code_link: "https://github.com/0xXerkan/gpt3",
+    live_demo_link: "https://0xxerkan.github.io/gpt3/"
   },
 ];
 

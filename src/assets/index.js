@@ -20,6 +20,17 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import bootstrap from './tech/bootstrap.png';
+import cpp from './tech/cpp.png';
+import ethersjs from './tech/ethers.png';
+import expressjs from './tech/express.png';
+import firebase from './tech/firebase.png';
+import framer from './tech/framer-motion.webp';
+import nextjs from './tech/next.png';
+import postgres from './tech/postgresql.png';
+import python from './tech/python.png';
+import solidity from './tech/solidity.png';
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -29,6 +40,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import smartbrain from './smartbrain.jpg';
+import nextgen from './nextgen.jpg';
+import gpt from './gpt3.jpg';
+
+import demo from './demo.png';
 
 export {
   logo,
@@ -52,6 +69,16 @@ export {
   tailwind,
   typescript,
   threejs,
+  bootstrap,
+  cpp,
+  ethersjs,
+  expressjs,
+  firebase,
+  framer,
+  nextjs,
+  postgres,
+  python,
+  solidity,
   meta,
   shopify,
   starbucks,
@@ -59,4 +86,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  smartbrain,
+  nextgen,
+  gpt,
+  demo
 };

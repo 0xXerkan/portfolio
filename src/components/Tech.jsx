@@ -1,10 +1,31 @@
-import { BallCanvas } from "./canvas";
 import { motion } from "framer-motion";
+import { Tilt } from "react-tilt";
 
 import { styles } from "../styles";
 import { technologies } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+
+const TechCard = ({index, name, icon}) => {
+  return (
+    <Tilt>
+      <motion.div
+        variants={fadeIn("right", "spring", 0.1 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
+        <div
+                key={name} 
+                className="w-28 h-28 rounded-[20px] bg-tertiary flex justify-center items-center">
+                  <img 
+                    src={icon} 
+                    alt={name}
+                    className="object-contain p-2" />
+        </div>
+      </motion.div>
+    </Tilt>
+
+  )
+}
 
 const Tech = () => {
   return (
@@ -21,11 +42,10 @@ const Tech = () => {
           Programming languages, frameworks, libraries, and other developer tools I have experience working with:
       </motion.p>
 
-      <div className="mt-20 flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map((technology) => (
-          <div key={technology.name} className="w-28 h-28">
-            <BallCanvas icon={technology.icon} />
-          </div>
+      <div className="mt-20 flex flex-row flex-wrap gap-10">
+        {technologies.map((technology, index) => (
+          <TechCard key={technology.name} index={index} {...technology} />
+          
         ))}
         
       </div>

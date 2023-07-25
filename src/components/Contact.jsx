@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import toast  from 'react-hot-toast';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -39,7 +40,7 @@ const Contact = () => {
       'FrGUwdZ-bNrNr7uCX'
       ).then(() => {
         setLoading(false);
-        alert('Thank you. I will get back to you as soon as possible.');
+        toast.success('Your message has been sent! Thank you!', { duration: 4000});
         setForm({
           name: '',
           email: '',
@@ -48,7 +49,7 @@ const Contact = () => {
       }, (error) => {
         setLoading(false);
         console.log(error);
-        alert('Something went wrong.');
+        toast.error('Something went wrong, please try again');
       })
 
   };
@@ -72,6 +73,7 @@ const Contact = () => {
             <input 
               type="text"
               name='name'
+              required
               value={form.name} 
               onChange={handleChange}
               placeholder='What is your name?'
@@ -83,6 +85,7 @@ const Contact = () => {
             <input 
               type="email"
               name='email'
+              required
               value={form.email} 
               onChange={handleChange}
               placeholder='What is your email?'
@@ -94,6 +97,7 @@ const Contact = () => {
             <textarea
               rows='7'
               name='message'
+              required
               value={form.message} 
               onChange={handleChange}
               placeholder='Please type your message'
