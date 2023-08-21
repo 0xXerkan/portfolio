@@ -36,6 +36,7 @@ import {
   smartbrain,
   nextgen,
   gpt,
+  jfhome,
 } from "../assets";
 
 export const navLinks = [
@@ -290,6 +291,28 @@ const projects = [
     image: nextgen,
     source_code_link: "https://github.com/0xXerkan/next-ecommerce",
     live_demo_link: "https://next-ecommerce-0xxerkan.vercel.app/"
+  },
+  {
+    name: "Job Finder App",
+    description:
+      "A job finder app built for iOS and Android using React Native that searches job postings on platforms like Linkedin and Indeed and displays them to the user with the job descriptions, qualifications, and gives the user the option to apply directly to the job posting. ",
+    tags: [
+      {
+        name: "react_native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "iOS",
+        color: "orange-text-gradient",
+      },      
+      {
+        name: "Android",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: jfhome,
+    source_code_link: "https://github.com/0xXerkan/react-native-job-finder",
+    live_demo_link: "/react-native-job-finder"
   },
   {
     name: "Figma Design Development",

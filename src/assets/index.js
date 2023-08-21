@@ -46,6 +46,14 @@ import nextgen from './nextgen.jpg';
 import gpt from './gpt3.jpg';
 
 import demo from './demo.png';
+import ios from './iosdownload.webp'
+import googleplay from './googleplaydownload.webp'
+
+import jobFinderiosqr from './job-finder-iosqr.svg'
+import jobFinderAndroidqr from './job-finder-androidqr.svg'
+
+import jfmain from './jf/jfmain.png'
+import jfhome from './jf/jfhome.png'
 
 export {
   logo,
@@ -89,5 +97,11 @@ export {
   smartbrain,
   nextgen,
   gpt,
-  demo
+  demo,
+  ios,
+  googleplay,
+  jobFinderiosqr,
+  jobFinderAndroidqr,
+  jfmain,
+  jfhome,
 };
