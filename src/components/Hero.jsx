@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -14,7 +15,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white `}>Hi, I'm <span className="hero__blue-text-gradient">Ricky</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am the developer you <br className="sm:block hidden" />have been looking for!</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 sm:max-w-[640px]`}>I develop user interfaces and backend systems for mobile and web applications</p>
         </div>
 
       </div>
