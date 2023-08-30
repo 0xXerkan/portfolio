@@ -45,14 +45,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a full stack developer with 5+ years of experience designing and
-        developing responsive front end user interfaces and back end servers and
-        databases for both mobile and web applications. I have experience with
-        Javascript and Python, and popular frameworks like React, Node.js, and
-        Next.js as well as mobile app development frameworks like React Native
-        and Expo. I collaborate closely with clients and team members to create
-        efficient, scalable, and user-friendly solutions that solve real-world
-        problems. Let's work together to bring your ideas to life!
+        I am a full stack developer with 5+ years of experience developing and
+        integrating responsive front end user interfaces and back end servers
+        and databases for both web and mobile applications. I have experience
+        with JavaScript and Python and am proficient with popular frameworks
+        like React and Next.js as well as Node.js and mobile app development
+        frameworks like React Native and Expo.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
