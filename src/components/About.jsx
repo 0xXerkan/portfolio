@@ -45,7 +45,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a full stack developer with 5+ years of experience developing and
+        I am a full stack developer with 7+ years of experience developing and
         integrating responsive front end user interfaces and back end servers
         and databases for both web and mobile applications. I have experience
         with JavaScript and Python and am proficient with popular frameworks
